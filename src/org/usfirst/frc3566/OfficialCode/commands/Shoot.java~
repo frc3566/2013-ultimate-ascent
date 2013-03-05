@@ -19,23 +19,7 @@ import org.usfirst.frc3566.OfficialCode.Robot;
 public class Shoot extends CommandGroup {
     
     public  Shoot() {
-       /*if (Robot.shooter.isLoaded()){
-            addSequential(new FrisbeeLoad());
-       }
-       if (Robot.shooter.isLoaded()){
-           addSequential(new FrisbeeStop());
-       }
-       this.setTimeout(2);
-       addSequential(new HockShoot());*/
-        if (Robot.shooter.isOpened()){
-            Robot.shooter.closehock();
-        }
-        if (Robot.shooter.isClosed()){
-            Robot.shooter.openhock();
-        }
-        if (Robot.shooter.isOpened()){
-            Robot.shooter.stopHock();
-        }
+       
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());

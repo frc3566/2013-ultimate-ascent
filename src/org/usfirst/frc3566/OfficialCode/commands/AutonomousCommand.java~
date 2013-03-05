@@ -17,21 +17,19 @@ import org.usfirst.frc3566.OfficialCode.RobotMap;
  */
 public class  AutonomousCommand extends CommandGroup {
     public AutonomousCommand() {
-        addSequential(new HockCloseOpen());
-       // addSequential(new FullShoot());
-        addSequential(new AngleDown());
-        /*addParala
-        addParallel(new AdjustY());*/
-       /* addSequential(new DeckWheelOn());
-        addSequential(new HockCloseOpen());
+        
+        addParallel(new HockCloseOpen());
+        addParallel(new AngleDown2());
+        addSequential(new StartShooter());
+        
+        //Shoot!!!
         addSequential(new DeckWheelOn());
         addSequential(new HockCloseOpen());
+        /*
+       //
         addSequential(new DeckWheelOn());
         addSequential(new HockCloseOpen());
-        addSequential(new DeckWheelOn());
-        addSequential(new HockCloseOpen());
-        addSequential(new DeckWheelOn());
-        addSequential(new HockCloseOpen());
+        shoot three frizbees
         addSequential(new DeckWheelOn());
         addSequential(new HockCloseOpen());*/
     }

@@ -27,6 +27,7 @@ public class  RunTank extends Command {
     }
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        System.out.println("Hi from runTank");
         Robot.pIDDrive.runtank(0.75*Robot.oi.joystick1.getY(), 0.75*Robot.oi.joystick2.getY());
         System.out.println(Robot.shooter.getshooterang());
     }

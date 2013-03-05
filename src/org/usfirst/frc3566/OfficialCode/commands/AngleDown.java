@@ -26,16 +26,18 @@ public class  AngleDown extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
         ang=-15;
+        
     }
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        if (Robot.shooter.getshooterang()<=ang){
+       // System.out.println("Hi in execute of angle down");
+       if (Robot.shooter.getshooterang()<=ang){
             Robot.shooter.screwdown(0);
         }else{
             
             Robot.shooter.screwdown(1);
         }
-        Robot.shooter.shoot(0.65);
+       // Robot.shooter.shoot(0.65);
     }
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {

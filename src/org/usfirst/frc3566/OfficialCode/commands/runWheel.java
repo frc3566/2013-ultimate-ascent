@@ -29,7 +29,7 @@ public class  runWheel extends Command {
     }
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        Robot.shooter.shoot(0.65);
+        Robot.shooter.shoot(0.55);
         i=true;
     }
     // Make this return true when this Command no longer needs to run execute()
