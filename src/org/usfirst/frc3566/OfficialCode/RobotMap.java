@@ -11,10 +11,9 @@ package org.usfirst.frc3566.OfficialCode;
     
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.CounterBase.EncodingType;
-import edu.wpi.first.wpilibj.Encoder.PIDSourceParameter;
+//import edu.wpi.first.wpilibj.Encoder.PIDSourceParameter;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.networktables.NetworkTable;
-import java.util.Vector;
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -76,12 +75,12 @@ public class RobotMap {
         pIDDriveQuadRight = new Encoder(1, 3, 1, 4, false, EncodingType.k4X);
 	LiveWindow.addSensor("PIDDrive", "QuadRight", pIDDriveQuadRight);
         pIDDriveQuadRight.setDistancePerPulse(1.0);
-        pIDDriveQuadRight.setPIDSourceParameter(PIDSourceParameter.kRate);
+        //pIDDriveQuadRight.setPIDSourceParameter(PIDSourceParameter.kRate);
         pIDDriveQuadRight.start();
         pIDDriveQuadLeft = new Encoder(1, 1, 1, 2, false, EncodingType.k4X);
 	LiveWindow.addSensor("PIDDrive", "QuadLeft", pIDDriveQuadLeft);
         pIDDriveQuadLeft.setDistancePerPulse(1.0);
-        pIDDriveQuadLeft.setPIDSourceParameter(PIDSourceParameter.kRate);
+        //pIDDriveQuadLeft.setPIDSourceParameter(PIDSourceParameter.kRate);
         pIDDriveQuadLeft.start();
         shooterShooterMotor = new Jaguar(1, 5);
 	LiveWindow.addActuator("Shooter", "ShooterMotor", (Jaguar) shooterShooterMotor);
